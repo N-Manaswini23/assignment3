@@ -138,12 +138,34 @@ Box-S has $2$ white and $4$ black balls and box-T has $5$ white and $3$ black ba
 \section*{SOLUTION}
 Box-S has $2$ white and $4$ black balls.\\
 Box-T has $5$ white and $3$ black balls.\\
-Let A : Event of transfering white ball from box-S to box-T\\
-Let B : Event of transfering black ball from box-S to box-T\\
-Let C: Event of drawing white ball from box-T\\
+\begin{table}[h!]
+\resizebox{9.5cm}{!}
+{ 
+\begin{tabular}{|c|c|}
+\hline
+Event & definition \\
+\hline
+A & Event of transfering white ball from\\
+& box-S to box-T\\
+\hline
+B & Event of transfering black ball from\\
+& box-S to box-T\\
+\hline
+C  & Event of drawing white ball from box-T \\
+\hline
+$\pr{C|A}$ & Probability of drawing whiteball from \\
+& box-T after transfering white ball to box-T.\\
+\hline
+$\pr{C|B}$ & Probability of drawing whiteball from\\
+& box-T after transfering black ball to box-T.\\
+\hline
+\end{tabular}
+}
+\caption{Table 1} 
+\label{tab:1}
+\end{table}
 
-$\pr{C|A}=$Probability of drawing whiteball from box-T after transfering white ball to box-T.\\
-$\pr{C|B}=$Probability of drawing whiteball from box-T after transfering black ball to box-T.\\
+
 \begin{table}[h!]
 \resizebox{9.5cm}{!}
 { 
@@ -155,8 +177,8 @@ value & $\frac{1}{3}$ &  $\frac{2}{3}$ &  $\frac{6}{9}$ &  $\frac{5}{9}$ \\
 \hline
 \end{tabular}
 }
-\caption{Table 1} 
-\label{tab:1}
+\caption{Table 2} 
+\label{tab:2}
 \end{table}
 
 
@@ -166,7 +188,7 @@ From Baye's theorem
 &=\pr{C|A} \times \pr{A} \notag \\
  & +\pr{C|B} \times \pr{B}  \label{5}
 \end{align}
-Substiting values from table \eqref{tab:1} in \eqref{5}
+Substiting values from table \eqref{tab:2} in \eqref{5}
 \begin{align}
 \pr{C} &= \frac{6}{9} \times \frac{1}{3}  + \frac{5}{9} \times \frac{2}{3} \\
 &=\frac{16}{27} \label{6}
