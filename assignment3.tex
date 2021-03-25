@@ -136,8 +136,8 @@ https://github.com/N-Manaswini23/assignment3/blob/main/assignment3.tex
 Box-S has $2$ white and $4$ black balls and box-T has $5$ white and $3$ black balls.A ball is drawn at random from box-S and put in box-T.Subsequently,the probability of drawing a white ball from box-T is? (rounding off to $ 2 $decimal places)
 
 \section*{SOLUTION}
-Box-S has $2$ white and $4$ black balls.\\
-Box-T has $5$ white and $3$ black balls.\\
+Box-0 has $2$ white and $4$ black balls.\\
+Box-1 has $5$ white and $3$ black balls.\\
 \begin{table}[h!]
 \resizebox{9.5cm}{!}
 { 
@@ -145,19 +145,28 @@ Box-T has $5$ white and $3$ black balls.\\
 \hline
 Event & definition \\
 \hline
-A & Event of transfering white ball from\\
-& box-S to box-T\\
+W & Event of transfering white balls\\
+& from box-0 to box-1\\
 \hline
-B & Event of transfering black ball from\\
-& box-S to box-T\\
+B & Event of transfering black balls \\
+&  from box-0 to box-1\\
 \hline
-C  & Event of drawing white ball from box-T \\
+C  & Event of drawing white balls\\
+& from box-1 \\
 \hline
-$\pr{C|A}$ & Probability of drawing whiteball from \\
-& box-T after transfering white ball to box-T.\\
+$\pr{W=1}$ & Probability of transfering one\\
+&  whiteball  from box-0 to box-1 \\
 \hline
-$\pr{C|B}$ & Probability of drawing whiteball from\\
-& box-T after transfering black ball to box-T.\\
+$\pr{B=1}$ &Probability of transfering one \\
+& blackball from box-0 to box-1 \\
+\hline
+$\pr{C=1|W=1}$ & Probability of drawing a whiteball\\
+&  from box-1 after transfering \\
+&white ball to box-1.\\
+\hline
+$\pr{C=1|B=1}$ & Probability of drawing a whiteball\\
+& from box-1 after transfering \\
+& black ball to box-1.\\
 \hline
 \end{tabular}
 }
@@ -167,11 +176,11 @@ $\pr{C|B}$ & Probability of drawing whiteball from\\
 
 
 \begin{table}[h!]
-\resizebox{9.5cm}{!}
+\resizebox{9.9cm}{!}
 { 
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-Probability & $\pr{A}$ & $\pr{B}$ & $\pr{C|A}$ & $\pr{C|B}$ \\
+Probability & $\pr{W=1}$ & $\pr{B=1}$ & $\pr{C=1|W=1}$ & $\pr{C=1|B=1}$ \\
 \hline
 value & $\frac{1}{3}$ &  $\frac{2}{3}$ &  $\frac{6}{9}$ &  $\frac{5}{9}$ \\
 \hline
@@ -184,17 +193,17 @@ value & $\frac{1}{3}$ &  $\frac{2}{3}$ &  $\frac{6}{9}$ &  $\frac{5}{9}$ \\
 
 From Baye's theorem
 \begin{align}
-\pr{\text{drawn ball is white}}&= \pr{C}\\
-&=\pr{C|A} \times \pr{A} \notag \\
- & +\pr{C|B} \times \pr{B}  \label{5}
+\pr{\text{drawn ball is white}}&= \pr{C=1}\\
+&=\pr{C=1|W=1} \times \pr{W=1} \notag \\
+ & +\pr{C=1|B=1} \times \pr{B=1}  \label{5}
 \end{align}
 Substiting values from table \eqref{tab:2} in \eqref{5}
 \begin{align}
-\pr{C} &= \frac{6}{9} \times \frac{1}{3}  + \frac{5}{9} \times \frac{2}{3} \\
+\pr{C=1} &= \frac{6}{9} \times \frac{1}{3}  + \frac{5}{9} \times \frac{2}{3} \\
 &=\frac{16}{27} \label{6}
 \end{align}
 $\therefore$ Probability of drawing white ball from\\
- box-T $=\pr{C}=\frac{16}{27}=0.59$
+ box-1 $=\pr{C=1}=\frac{16}{27}=0.59$
 \begin{figure}[htb!]
 \begin{center}
 \includegraphics[width=0.5\textwidth]{assignment3_drawn_theoretrical.png}
